@@ -526,6 +526,16 @@ footer {
     .footer-col-1 {
         margin-bottom: 1.5rem;
     }
+    #signup-banner, .footer-col-1 h6, .footer-col-1 button {
+        display: none;
+    }
+
+    .footer-col-1 {
+        margin-bottom: 0;
+    }
+    .footer-col-2 a {
+        font-size: 16px;
+    }
     #top-btn {
         display: none;
     }
@@ -538,14 +548,4 @@ footer {
     #icon-div .section-container div h2 {
         font-size: 1.1rem;
     }
-    .footer-col-1 {
-        margin-bottom: 0;
-    }
-    .footer-col-1 h6, .footer-col-1 button {
-        display: none;
-    }
-    .footer-col-2 a {
-        font-size: 16px;
-    }
-    
 }
