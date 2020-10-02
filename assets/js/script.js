@@ -1,3 +1,7 @@
+mybutton = document.getElementById("top-btn");
+
+window.onscroll = function () { scrollFunction() };
+
 document.getElementById("phone").addEventListener("input", function (e) {
     var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
     e.target.value = !x[2] ? x[1] : "(" + x[1] + ") " + x[2] + (x[3] ? "-" + x[3] : "");
@@ -31,14 +35,21 @@ $("#form-submit").on("click", function (event) {
 
             },
             error: function (err) {
-                console.log(err)
                 alert("error")
+                document.getElementById("companyName").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
             }
         });
     } else {
         console.log("form not valid")
     }
 });
+
+$("#menu a").on("click", function() {
+    $("#menuToggle input").prop("checked", false);
+})
 
 function validateForm(data) {
     var valid = true;
@@ -98,16 +109,18 @@ function validatePhone(num) {
     return re.test(num);
 }
 
-window.onscroll = function() {scrollFunction()};
-
-mybutton = document.getElementById("top-btn");
-
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "flex";
-  } else {
-    mybutton.style.display = "none";
-  }
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
+    if (vw > 425) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "flex";
+        } else {
+            mybutton.style.display = "none";
+        }
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 function topFunction() {
