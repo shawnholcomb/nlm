@@ -47,8 +47,21 @@ $("#form-submit").on("click", function (event) {
     }
 });
 
-$("#menu a").on("click", function() {
+$("#menu a").on("click", function () {
     $("#menuToggle input").prop("checked", false);
+})
+
+$("#menuToggle").on("click", function () {
+    if ($("#menuInput").is(":checked")) {
+        console.log("checked")
+        $("html, body").css({
+            overflow: "hidden"
+        });
+    } else {
+        $("html, body").css({
+            overflow: "scroll"
+        });
+    }
 })
 
 function validateForm(data) {
