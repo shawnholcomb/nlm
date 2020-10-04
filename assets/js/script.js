@@ -125,15 +125,21 @@ function validatePhone(num) {
 function scrollFunction() {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
-    if (vw > 425) {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "flex";
-        } else {
-            mybutton.style.display = "none";
-        }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex";
     } else {
         mybutton.style.display = "none";
     }
+    
+    // if (vw > 425) {
+    //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //         mybutton.style.display = "flex";
+    //     } else {
+    //         mybutton.style.display = "none";
+    //     }
+    // } else {
+    //     mybutton.style.display = "none";
+    // }
 }
 
 function topFunction() {
