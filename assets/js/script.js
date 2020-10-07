@@ -30,8 +30,8 @@ $("#form-submit").on("click", function (event) {
                 document.getElementById("name").value = "";
                 document.getElementById("email").value = "";
                 document.getElementById("phone").value = "";
-                // $(".email-form").hide();
-                // $(".form-confirm").text("Your information has been submitted");
+                $(".email-form").hide();
+                $(".form-message").show();
 
             },
             error: function (err) {

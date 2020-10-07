@@ -84,7 +84,7 @@ header img {
     margin: 0;
 }
 
-.nav-link div:hover p {
+.nav-link p:hover {
     text-decoration: underline;
 }
 
@@ -198,7 +198,7 @@ header img {
     margin: 80px 0;
 }
 
-.email-form {
+.email-form, .form-message {
     display: flex;
     flex-direction: column;
     width: 550px;
@@ -213,21 +213,22 @@ header img {
 }
 
 .email-form input:last-of-type {
-    background-color: #fff000;
+    background-color: #f1e301;
     border: none;
     outline: none;
     margin-top: 10px;
     font-weight: bold;
     letter-spacing: 1px;
+    font-size: 1.2rem;
 }
 
 .email-form input:last-of-type:hover {
-    background-color: #f1e301;
-    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.3);
+    background-color: #fff000;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .email-form input:last-of-type:active {
-    background-color: #f1e301;
+    background-color: #fff000;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     transform: translateY(2px);
 }
@@ -240,6 +241,17 @@ header img {
 
 .form-error {
     background-color: #fdb5b5;
+}
+
+.inp-field:focus::placeholder {
+    color: transparent;
+}
+
+.form-message {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px;
+    display: none;
 }
 
 /*---------- Icon Section ----------*/
@@ -274,10 +286,10 @@ header img {
 
 /*---------- Main Section ----------*/
 
-#testimonial-div {
+/* #testimonial-div {
     background-color: #f0f1f1;
     ;
-}
+} */
 
 .section-header {
     font-size: 2.9rem;
@@ -291,13 +303,13 @@ header img {
     text-align: center;
 }
 
-#main-vid-div > div {
+#main-vid-div>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#main-vid-div > div > h2:last-of-type {
+#main-vid-div>div>h2:last-of-type {
     margin-top: 0;
 }
 
@@ -350,6 +362,59 @@ header img {
     order: 1;
 }
 
+/*---------- Hardware Section ----------*/
+
+#hardware-div {
+    width: 100%;
+    background-color: #f0f1f1;
+    display: flex;
+}
+
+#hardware-div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 35px 125px;
+    text-align: center; */
+}
+
+#hardware-div div h5 {
+    font-weight: bold;
+}
+
+#hardware-div div h6 {
+    margin-bottom: 20px
+}
+
+.card-reader {
+    width: 50%;
+}
+
+.start-here-btn {
+    background-color: #f1e301;
+    padding: 0.7rem 1.8rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.start-here-btn:hover {
+    background-color: #fff000;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.start-here-btn:active {
+    background-color: #fff000;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+    outline: none;
+}
+
 /*---------- FAQ Section ----------*/
 
 .faq-item {
@@ -380,25 +445,25 @@ header img {
 }
 
 .sign-up-btn {
-    background-color: #fff000;
-    padding: 1rem 2rem;
+    background-color: #f1e301;
+    padding: 1.2rem 2.2rem;
     border-radius: 10px;
     border: none;
     outline: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    /* font-weight: bolder; */
     position: absolute;
     top: 45%;
     right: 15%;
 }
 
 .sign-up-btn:hover {
-    background-color: #f1e301;
+    background-color: #fff000;
     box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .sign-up-btn:active {
-    background-color: #f1e301;
+    background-color: #fff000;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     transform: translateY(2px);
     outline: none;
@@ -508,7 +573,7 @@ footer {
     display: flex;
     align-items: center;
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: -72.5px;
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
@@ -540,19 +605,9 @@ footer {
     transform: translateX(-72.5px);
 }
 
-/* #top-btn:hover {
-    color: #f0f1f1;
-} */
-
 @media (min-width: 1441px) {
     header {
         background-position-y: -110px;
-    }
-}
-
-@media (max-width: 1300px) {
-    .footer-logo {
-        display: none;
     }
 }
 
@@ -563,6 +618,9 @@ footer {
     .section-header {
         font-size: 2.4rem;
     }
+    #hardware-div div h5 {
+        font-size: 1rem;
+    }
     .vid-desc h5 {
         font-size: 1.2rem;
     }
@@ -570,7 +628,7 @@ footer {
         font-size: 1.3rem;
     }
     .sign-up-btn {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .footer-row {
         margin: 2rem 0 3rem 0;
@@ -580,6 +638,24 @@ footer {
 @media (max-width: 991px) {
     #menuToggle {
         display: block;
+    }
+    .vid-row-2 div:first-of-type, .vid-row-4 div:first-of-type {
+        order: 1;
+    }
+    .vid-row-2 div:last-of-type, .vid-row-4 div:last-of-type {
+        order: 2;
+    }
+    #hardware-div {
+        display: none;
+    }
+    #faq-div {
+        background-color: #f0f1f1;
+    }
+    .faq-item {
+        text-align: center;
+    }
+    .footer-logo {
+        display: none;
     }
 }
 
@@ -592,7 +668,7 @@ footer {
     }
     .form-div {
         justify-content: center;
-        margin: 250px 0 0 0;
+        margin: 200px 0 0 0;
     }
     .icon {
         width: 140px;
@@ -607,14 +683,27 @@ footer {
     .video-container {
         margin-bottom: 1rem;
     }
-    .vid-row-2 div:first-of-type, .vid-row-4 div:first-of-type {
-        order: 1;
-    }
-    .vid-row-2 div:last-of-type, .vid-row-4 div:last-of-type {
-        order: 2;
+    .vid-desc {
+        padding: 20px 45px 30px;
     }
     .faq-item {
         margin-bottom: 2rem;
+    }
+    .sign-up-btn {
+        font-size: 1.5rem;
+    }
+    .footer-row {
+        margin: 2rem 0 2rem 0;
+    }
+    .logo-white {
+        width: 300px;
+        margin-bottom: 2.5rem;
+    }
+    .footer-col-2 h4 {
+        font-size: 1.3rem;
+    }
+    .footer-col-2 div i {
+        font-size: 35px;
     }
 }
 
@@ -679,6 +768,12 @@ footer {
         transition: none;
         transform: none;
     }
+    footer {
+        padding: 25px;
+    }
+    .logo-white {
+        width: 250px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -687,5 +782,11 @@ footer {
     }
     #icon-div .section-container div h2 {
         font-size: 1.1rem;
+    }
+    .vid-desc {
+        padding: 20px 25px 30px;
+    }
+    .footer-col-2 h4 {
+        font-size: 1.2rem;
     }
 }
