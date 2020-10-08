@@ -195,7 +195,7 @@ header img {
     margin: 80px 0;
 }
 
-.email-form, .form-message {
+.email-form, .form-message, .form-error {
     display: flex;
     flex-direction: column;
     width: 550px;
@@ -241,11 +241,15 @@ header img {
     color: transparent;
 }
 
-.form-message {
+.form-message, .form-error {
     background-color: #fff;
     border-radius: 10px;
     padding: 35px;
     display: none;
+}
+
+.form-message h3, .form-error h3 {
+    font-weight: 300;
 }
 
 /*---------- Icon Section ----------*/
@@ -798,11 +802,14 @@ footer {
     #icon-div .section-container div h2 {
         font-size: 1.1rem;
     }
+    #main-vid-div>div>h2 {
+        font-size: 1.7rem;
+    }
     .vid-desc {
-        padding: 20px 25px 30px;
+        padding: 0 25px 25px;
     }
     .faq-item {
-        padding: 20px 25px 30px;
+        padding: 0 25px 25px;
     }
     padding: 20px 45px 30px;
     .footer-col-2 h4 {
