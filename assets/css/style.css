@@ -195,7 +195,7 @@ header img {
     margin: 80px 0;
 }
 
-.email-form, .form-message, .form-error {
+.email-form {
     display: flex;
     flex-direction: column;
     width: 550px;
@@ -242,13 +242,19 @@ header img {
 }
 
 .form-message, .form-error {
-    background-color: #fff;
+    background-color: rgba(0,0,0,0.4);
     border-radius: 10px;
     padding: 35px;
     display: none;
+    min-height: 160px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-message h3, .form-error h3 {
+    color: #fff;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
@@ -284,11 +290,6 @@ header img {
 
 /*---------- Main Section ----------*/
 
-/* #testimonial-div {
-    background-color: #f0f1f1;
-    ;
-} */
-
 .section-header {
     font-size: 2.9rem;
     margin: 3rem 0;
@@ -296,8 +297,7 @@ header img {
 }
 
 .main-header {
-    /* font-size: 1.5rem; */
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -421,7 +421,7 @@ header img {
 /*---------- FAQ Section ----------*/
 
 #faq-div {
-    background-color: #f0f1f1;
+    background-color: #fff;
 }
 
 .faq-item {
@@ -700,6 +700,9 @@ footer {
     }
     #hardware-div {
         display: none;
+    }
+    #faq-div {
+        background-color: #f0f1f1;
     }
     .main-vid {
         width: 100%
