@@ -482,7 +482,7 @@ footer {
 }
 
 .footer-row {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .footer-col-1 {
@@ -492,7 +492,7 @@ footer {
 
 .logo-white {
     width: 400px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .footer-col-1 a, .footer-col-1 h5 {
@@ -502,7 +502,7 @@ footer {
 .footer-col-2 {
     display: flex;
     align-items: baseline;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .footer-col-2 a {
