@@ -314,6 +314,8 @@ header img {
 .main-vid {
     width: 85%;
     height: 100%;
+    margin-bottom: 3rem;
+
 }
 
 .vid-row {
@@ -421,7 +423,7 @@ header img {
 /*---------- FAQ Section ----------*/
 
 #faq-div {
-    background-color: #fff;
+    background-color: #f0f1f1;
 }
 
 .faq-item {
@@ -732,17 +734,17 @@ footer {
         width: 100px;
     }
     #icon-div .section-container div h2 {
-        font-size: 1.3rem;
+        font-size: 1.13rem;
     }
     .section-header {
         font-size: 1.7rem;
         margin: 1.7rem 0;
     }
-    .vid-desc h5 {
+    /* .vid-desc h5 {
         font-size: 1rem;
-    }
+    } */
     .faq-item h5 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .footer-col-1 {
         margin-bottom: 1.5rem;
@@ -776,7 +778,7 @@ footer {
         background-position-x: -135px;
     }
     #icon-div .section-container div h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     #main-vid-div>div>h2 {
         font-size: 1.7rem;
