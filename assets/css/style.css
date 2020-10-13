@@ -315,8 +315,23 @@ header img {
     width: 85%;
     height: 100%;
     margin-bottom: 3rem;
-
 }
+
+.main-video-container {
+    width: 85%;
+    position: relative;
+    padding-bottom: 45.3%;
+    padding-top: 30px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.main-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
 
 .vid-row {
     margin-bottom: 2rem;
@@ -673,13 +688,19 @@ footer {
         font-size: 2rem;
         margin: 2rem 0;
     }
+    /* .main-video-container {
+        margin-bottom: 0;
+    } */
     #hardware-div {
         display: none;
     }
-    #faq-div {
+    #testimonial-div {
         background-color: #f0f1f1;
     }
-    .main-vid {
+    #faq-div {
+        background-color: #fff;
+    }
+    .main-vid, .main-video-container {
         width: 100%
     }
     .vid-row {
